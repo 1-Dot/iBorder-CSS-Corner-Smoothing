@@ -11,7 +11,7 @@ CSS iOS-like rounded corner masks using the Houdini API
 
 ```html
 <script>
-    (CSS.paintWorklet || paintWorklet).addModule('corner-smoothing.js')
+    (CSS.paintWorklet || paintWorklet).addModule('iborder.js')
 </script>
 <div class="iborder-test">
     <div>Test</div>
