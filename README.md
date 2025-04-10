@@ -5,7 +5,7 @@ CSS iOS-like rounded corner masks using the Houdini API
 
 ## Demo
 
-![](https://github.com/1-Dot/iBorder-Corner-Smoothing/blob/main/demo.png?raw=true)
+![](https://github.com/1-Dot/iBorder-Corner-Smoothing/blob/main/demo2.png?raw=true)
 
 ## Using
 
