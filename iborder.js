@@ -82,7 +82,6 @@ registerPaint('iborder-s', class {
     static get inputProperties() {
         return [
             '--iborder-radius',
-            '--iborder-color',
             '--iborder-width'
         ];
     }
@@ -93,7 +92,7 @@ registerPaint('iborder-s', class {
 
         const strokeWidth = parseCSSLength(props.get('--iborder-width'), 2); // Default 2px
         const radius = parseCSSLength(props.get('--iborder-radius'), 10); // Default 10px
-        const strokeColor = props.get('--iborder-color')?.toString() || 'black';
+        const strokeColor = 'black';
 
         if (strokeWidth <= 0) {
             return; // Nothing to paint if stroke width is zero or negative
