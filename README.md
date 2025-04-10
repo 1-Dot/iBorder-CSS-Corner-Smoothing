@@ -46,6 +46,7 @@ CSS iOS-like rounded corner masks using the Houdini API
     content: "";
     inset: 0;
     position: absolute;
+    pointer-events: none;
 }
 ```
 
