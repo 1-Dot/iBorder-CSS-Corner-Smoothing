@@ -1,13 +1,19 @@
 # iBorder-Corner-Smoothing
-CSS iOS-like rounded corner masks using the Houdini API
+iOS-like Rounded Corner in CSS
 
-在 CSS 中高效方便地使用类似 iOS 图标的曲率连续圆角，使用 Houdini API
+This project uses SVG curves exported from Figma after enabling Corner Smoothing. The curves are then dynamically generated with JavaScript to create smooth, continuous rounded corners. By leveraging the Houdini API, we can efficiently render these iOS-like rounded corner effects directly in CSS, making it easy to apply smooth, consistent corners in your projects.
+
+iOS 风格圆角的 CSS 实现
+
+这个项目利用了在 Figma 中启用 60% Corner Smoothing 后导出的 SVG 曲线，并通过 JavaScript 动态生成遮罩路径。结合 Houdini API，能够高效地在 CSS 中实现类似 iOS 图标的连续圆角效果。这样，你可以在项目中轻松地使用平滑且一致的 iOS 圆角。
 
 ## Demo
 
 ![](https://github.com/1-Dot/iBorder-Corner-Smoothing/blob/main/demo2.png?raw=true)
 
 ## Using
+
+demo.html
 
 ```html
 <script>
@@ -17,6 +23,8 @@ CSS iOS-like rounded corner masks using the Houdini API
     <div>Test</div>
 </div>
 ```
+
+style.css
 
 ```css
 /* Use a wrapper for shadow */
