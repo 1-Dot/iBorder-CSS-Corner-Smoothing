@@ -57,3 +57,7 @@ style.css
     pointer-events: none;
 }
 ```
+
+## Warning
+
+Currently not working on Firefox and Safari

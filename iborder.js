@@ -103,7 +103,7 @@ registerPaint('iborder-s', class {
         const adjustedWidth = Math.max(0, width - strokeWidth); // Ensure non-negative
         const adjustedHeight = Math.max(0, height - strokeWidth); // Ensure non-negative
         // Adjust radius for inner stroke, ensure it doesn't become negative
-        const adjustedRadius = Math.max(0, radius - halfStroke * 2);
+        const adjustedRadius = Math.max(0, radius - halfStroke);
 
         // Generate path for the *center* of the stroke line
         const svgPathString = generateiOSRoundedRectPath(adjustedWidth, adjustedHeight, adjustedRadius);
