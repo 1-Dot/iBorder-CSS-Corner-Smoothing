@@ -3,7 +3,7 @@
 }
 
 .test>div {
-    --iborder-radius: 64;
+    --iborder-radius: 40;
     background-color: #F8F9FB;
     mask-image: paint(iborder);
     width: 400px;
@@ -17,7 +17,7 @@
 }
 
 .test>div::before {
-    --iborder-radius: 64;
+    --iborder-radius: 40;
     --iborder-width: 3;
     background-color: #DBDEE6;
     mask-image: paint(iborder-s);

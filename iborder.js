@@ -9,7 +9,11 @@
 function generateiOSRoundedRectPath(width, height, radius) {
     // Ensure radius doesn't exceed half of the smaller dimension
     const maxRadius = Math.min(width / 2, height / 2);
-    const r = Math.max(0, Math.min(radius, maxRadius)); // Clamp radius between 0 and maxRadius
+    const r = Math.max(0, Math.min(radius, maxRadius)) * 1.6; // Clamp radius between 0 and maxRadius
+    // Warning: Path error occurs if radius > maxRadius * 0.8, use border-radius instead
+    if (radius > maxRadius * 0.8) {
+        console.warn(`Radius ${radius} is too large for dimensions ${width}x${height}`);
+    }
 
     // Avoid division by zero or NaN issues if r is 0
     if (r === 0) {
